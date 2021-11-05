@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93E3CB5C2734E5CD00A3A0F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93E3CB5B2734E5CD00A3A0F0 /* GoogleService-Info.plist */; };
+		93E3CB6027350B9A00A3A0F0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E3CB5F27350B9A00A3A0F0 /* Extension.swift */; };
+		93E3CB622735165C00A3A0F0 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E3CB612735165C00A3A0F0 /* PostModel.swift */; };
 		93FFE8B82734D6F8000E2B8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8B72734D6F8000E2B8A /* AppDelegate.swift */; };
 		93FFE8BA2734D6F8000E2B8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8B92734D6F8000E2B8A /* SceneDelegate.swift */; };
 		93FFE8BC2734D6F8000E2B8A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8BB2734D6F8000E2B8A /* HomeViewController.swift */; };
@@ -23,7 +25,6 @@
 		93FFE8E22734E125000E2B8A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8E12734E125000E2B8A /* SettingViewController.swift */; };
 		93FFE8E42734E15B000E2B8A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8E32734E15B000E2B8A /* TabBarViewController.swift */; };
 		93FFE8E82734E1B9000E2B8A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8E72734E1B9000E2B8A /* PostViewController.swift */; };
-		93FFE8EA2734E1CD000E2B8A /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8E92734E1CD000E2B8A /* APICaller.swift */; };
 		93FFE8EC2734E1E5000E2B8A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8EB2734E1E5000E2B8A /* StorageManager.swift */; };
 		93FFE8EE2734E201000E2B8A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8ED2734E201000E2B8A /* DatabaseManager.swift */; };
 		93FFE8F02734E228000E2B8A /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FFE8EF2734E228000E2B8A /* AuthenticationManager.swift */; };
@@ -36,6 +37,8 @@
 		3D0570704FF39BD17E3FA79D /* Pods-TikTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.release.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.release.xcconfig"; sourceTree = "<group>"; };
 		54765E157AA23862D06B58E5 /* Pods-TikTok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.debug.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.debug.xcconfig"; sourceTree = "<group>"; };
 		93E3CB5B2734E5CD00A3A0F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		93E3CB5F27350B9A00A3A0F0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		93E3CB612735165C00A3A0F0 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		93FFE8B42734D6F8000E2B8A /* TikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FFE8B72734D6F8000E2B8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93FFE8B92734D6F8000E2B8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +56,6 @@
 		93FFE8E12734E125000E2B8A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		93FFE8E32734E15B000E2B8A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		93FFE8E72734E1B9000E2B8A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
-		93FFE8E92734E1CD000E2B8A /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		93FFE8EB2734E1E5000E2B8A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		93FFE8ED2734E201000E2B8A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		93FFE8EF2734E228000E2B8A /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				93FFE8C02734D6F9000E2B8A /* Assets.xcassets */,
 				93FFE8B72734D6F8000E2B8A /* AppDelegate.swift */,
 				93FFE8B92734D6F8000E2B8A /* SceneDelegate.swift */,
+				93E3CB5F27350B9A00A3A0F0 /* Extension.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 		93FFE8CE2734DFC2000E2B8A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				93E3CB612735165C00A3A0F0 /* PostModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,7 +154,6 @@
 		93FFE8D02734DFEF000E2B8A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				93FFE8E92734E1CD000E2B8A /* APICaller.swift */,
 				93FFE8EB2734E1E5000E2B8A /* StorageManager.swift */,
 				93FFE8ED2734E201000E2B8A /* DatabaseManager.swift */,
 				93FFE8EF2734E228000E2B8A /* AuthenticationManager.swift */,
@@ -354,15 +357,16 @@
 				93FFE8D42734E08C000E2B8A /* ExploreViewController.swift in Sources */,
 				93FFE8E22734E125000E2B8A /* SettingViewController.swift in Sources */,
 				93FFE8DC2734E105000E2B8A /* UserListViewController.swift in Sources */,
-				93FFE8EA2734E1CD000E2B8A /* APICaller.swift in Sources */,
 				93FFE8E82734E1B9000E2B8A /* PostViewController.swift in Sources */,
 				93FFE8D62734E0B5000E2B8A /* CameraViewController.swift in Sources */,
 				93FFE8E42734E15B000E2B8A /* TabBarViewController.swift in Sources */,
 				93FFE8BC2734D6F8000E2B8A /* HomeViewController.swift in Sources */,
+				93E3CB6027350B9A00A3A0F0 /* Extension.swift in Sources */,
 				93FFE8E02734E11E000E2B8A /* SignUpViewController.swift in Sources */,
 				93FFE8F02734E228000E2B8A /* AuthenticationManager.swift in Sources */,
 				93FFE8D82734E0CC000E2B8A /* NotificationsViewController.swift in Sources */,
 				93FFE8DE2734E112000E2B8A /* SignInViewController.swift in Sources */,
+				93E3CB622735165C00A3A0F0 /* PostModel.swift in Sources */,
 				93FFE8DA2734E0ED000E2B8A /* ProfileViewController.swift in Sources */,
 				93FFE8EC2734E1E5000E2B8A /* StorageManager.swift in Sources */,
 				93FFE8B82734D6F8000E2B8A /* AppDelegate.swift in Sources */,
