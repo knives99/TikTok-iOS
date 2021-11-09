@@ -74,7 +74,8 @@ class HomeViewController: UIViewController {
             return
         }
         
-        let vc = UIViewController()
+        let vc = PostViewController(model: model)
+        vc.delegate = self
         vc.view.backgroundColor = .blue
         
         followingPageViewController.setViewControllers([PostViewController(model: model)], direction: .forward, animated: false, completion: nil)
@@ -87,8 +88,11 @@ class HomeViewController: UIViewController {
     }
     
     func setUpForYouFeed(){
-
-        let vc = UIViewController()
+        guard let model = followingPosts.first else{
+            return
+        }
+        let vc = PostViewController(model: model)
+        vc.delegate = self
         vc.view.backgroundColor = .blue
         
         forYouPageViewController.setViewControllers([vc], direction: .forward, animated: false, completion: nil)
@@ -119,6 +123,7 @@ extension HomeViewController:UIPageViewControllerDataSource{
         let priorIndex = index - 1
         let model = currentPosts[priorIndex]
         let vc = PostViewController(model: model)
+        vc.delegate = self
         return vc
     }
     
@@ -137,6 +142,7 @@ extension HomeViewController:UIPageViewControllerDataSource{
         let nextIndex = index + 1
         let model = currentPosts[nextIndex]
         let vc = PostViewController(model: model)
+        vc.delegate = self
         return vc
     }
     
@@ -160,4 +166,62 @@ extension HomeViewController:UIScrollViewDelegate {
         }
             
     }
+}
+
+extension HomeViewController : PostViewControllerDelegate{
+    func postViewController(_ vc: PostViewController, didTapCommentButtonFor post: PostModel) {
+        horizontalScrollView.isScrollEnabled = false
+        if horizontalScrollView.contentOffset.x == 0 {
+            //following
+            followingPageViewController.dataSource = nil
+        }else{
+            forYouPageViewController.dataSource = nil
+        }
+        let vc = CommentViewController(post: post)
+        vc.delegate = self
+        addChild(vc)
+        vc.didMove(toParent: self)
+        view.addSubview(vc.view)
+        let frame:CGRect = CGRect(x: 0, y: view.height, width: view.width, height: view.height * 0.76)
+        vc.view.frame = frame
+        UIView.animate(withDuration: 0.2) {
+            vc.view.frame = CGRect(x: 0, y: self.view.height - frame.height, width: frame.width, height: frame.height)
+        }
+    }
+    
+    func postViewController(_ vc:PostViewController,didTapProfileButtonFor post: PostModel) {
+        let user = post.user
+        let vc = ProfileViewController(user: user)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+}
+
+extension HomeViewController:CommentsViewControllerDelegate{
+    func didTapCloseForComments(with viewController: CommentViewController) {
+        //close comments with animate
+        let frame:CGRect = viewController.view.frame
+        
+        UIView.animate(withDuration: 0.2) {
+            viewController.view.frame = CGRect(x: 0, y: self.view.height - frame.height, width: frame.width, height: frame.height)
+        }completion: { [weak self]done in
+            if done{
+                DispatchQueue.main.async {
+                    // remove comment as child
+                    viewController.view.removeFromSuperview()
+                    viewController.removeFromParent()
+                    // allow horizontal and vertical scroll
+                    self?.horizontalScrollView.isScrollEnabled = true
+                    self?.forYouPageViewController.dataSource = self
+                    self?.followingPageViewController.dataSource = self
+                    
+                }
+                
+            }
+        }
+
+        
+    }
+    
+    
 }

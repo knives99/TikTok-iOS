@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9348C6C7273A1E4100F089AD /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348C6C6273A1E4100F089AD /* CommentViewController.swift */; };
+		9348C6EA273A4F7400F089AD /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348C6E9273A4F7400F089AD /* PostComment.swift */; };
+		9348C6EC273A4FB500F089AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348C6EB273A4FB500F089AD /* User.swift */; };
+		9348C6EE273A53B300F089AD /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348C6ED273A53B300F089AD /* CommentTableViewCell.swift */; };
+		9348C6F1273A78B000F089AD /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9348C6F0273A778C00F089AD /* video.mp4 */; };
 		93E3CB5C2734E5CD00A3A0F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93E3CB5B2734E5CD00A3A0F0 /* GoogleService-Info.plist */; };
 		93E3CB6027350B9A00A3A0F0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E3CB5F27350B9A00A3A0F0 /* Extension.swift */; };
 		93E3CB622735165C00A3A0F0 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E3CB612735165C00A3A0F0 /* PostModel.swift */; };
@@ -36,6 +41,11 @@
 		082C8DE35EE4461A1F93BDD3 /* Pods_TikTok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0570704FF39BD17E3FA79D /* Pods-TikTok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.release.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.release.xcconfig"; sourceTree = "<group>"; };
 		54765E157AA23862D06B58E5 /* Pods-TikTok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok.debug.xcconfig"; path = "Target Support Files/Pods-TikTok/Pods-TikTok.debug.xcconfig"; sourceTree = "<group>"; };
+		9348C6C6273A1E4100F089AD /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		9348C6E9273A4F7400F089AD /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
+		9348C6EB273A4FB500F089AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9348C6ED273A53B300F089AD /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		9348C6F0273A778C00F089AD /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		93E3CB5B2734E5CD00A3A0F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93E3CB5F27350B9A00A3A0F0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		93E3CB612735165C00A3A0F0 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -77,6 +87,7 @@
 		93FFE8AB2734D6F8000E2B8A = {
 			isa = PBXGroup;
 			children = (
+				9348C6F0273A778C00F089AD /* video.mp4 */,
 				93FFE8B62734D6F8000E2B8A /* TikTok */,
 				93FFE8B52734D6F8000E2B8A /* Products */,
 				D788AF2DFF65E528503701DD /* Pods */,
@@ -140,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				93E3CB612735165C00A3A0F0 /* PostModel.swift */,
+				9348C6E9273A4F7400F089AD /* PostComment.swift */,
+				9348C6EB273A4FB500F089AD /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +196,7 @@
 				93FFE8DD2734E112000E2B8A /* SignInViewController.swift */,
 				93FFE8DF2734E11E000E2B8A /* SignUpViewController.swift */,
 				93FFE8E12734E125000E2B8A /* SettingViewController.swift */,
+				9348C6C6273A1E4100F089AD /* CommentViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -197,6 +211,7 @@
 		93FFE8E62734E18F000E2B8A /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				9348C6ED273A53B300F089AD /* CommentTableViewCell.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -280,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9348C6F1273A78B000F089AD /* video.mp4 in Resources */,
 				93FFE8C42734D6F9000E2B8A /* LaunchScreen.storyboard in Resources */,
 				93E3CB5C2734E5CD00A3A0F0 /* GoogleService-Info.plist in Resources */,
 				93FFE8C12734D6F9000E2B8A /* Assets.xcassets in Resources */,
@@ -352,8 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9348C6C7273A1E4100F089AD /* CommentViewController.swift in Sources */,
 				93FFE8F22734E257000E2B8A /* HapticsManager.swift in Sources */,
 				93FFE8EE2734E201000E2B8A /* DatabaseManager.swift in Sources */,
+				9348C6EE273A53B300F089AD /* CommentTableViewCell.swift in Sources */,
 				93FFE8D42734E08C000E2B8A /* ExploreViewController.swift in Sources */,
 				93FFE8E22734E125000E2B8A /* SettingViewController.swift in Sources */,
 				93FFE8DC2734E105000E2B8A /* UserListViewController.swift in Sources */,
@@ -361,10 +379,12 @@
 				93FFE8D62734E0B5000E2B8A /* CameraViewController.swift in Sources */,
 				93FFE8E42734E15B000E2B8A /* TabBarViewController.swift in Sources */,
 				93FFE8BC2734D6F8000E2B8A /* HomeViewController.swift in Sources */,
+				9348C6EC273A4FB500F089AD /* User.swift in Sources */,
 				93E3CB6027350B9A00A3A0F0 /* Extension.swift in Sources */,
 				93FFE8E02734E11E000E2B8A /* SignUpViewController.swift in Sources */,
 				93FFE8F02734E228000E2B8A /* AuthenticationManager.swift in Sources */,
 				93FFE8D82734E0CC000E2B8A /* NotificationsViewController.swift in Sources */,
+				9348C6EA273A4F7400F089AD /* PostComment.swift in Sources */,
 				93FFE8DE2734E112000E2B8A /* SignInViewController.swift in Sources */,
 				93E3CB622735165C00A3A0F0 /* PostModel.swift in Sources */,
 				93FFE8DA2734E0ED000E2B8A /* ProfileViewController.swift in Sources */,
