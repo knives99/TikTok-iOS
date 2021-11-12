@@ -19,6 +19,13 @@
 		935F423C273D011100C31ED7 /* ExploerPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F423B273D011100C31ED7 /* ExploerPostViewModel.swift */; };
 		935F423E273D016D00C31ED7 /* ExploreHashTagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F423D273D016D00C31ED7 /* ExploreHashTagViewModel.swift */; };
 		935F4240273D018900C31ED7 /* ExploreUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F423F273D018900C31ED7 /* ExploreUserViewModel.swift */; };
+		935F4242273E00FB00C31ED7 /* ExploreBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4241273E00FB00C31ED7 /* ExploreBannerCollectionViewCell.swift */; };
+		935F4244273E013700C31ED7 /* ExplorePostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4243273E013700C31ED7 /* ExplorePostCollectionViewCell.swift */; };
+		935F4246273E016C00C31ED7 /* ExploreUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4245273E016C00C31ED7 /* ExploreUserCollectionViewCell.swift */; };
+		935F4248273E017B00C31ED7 /* ExploreHashtagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4247273E017B00C31ED7 /* ExploreHashtagCollectionViewCell.swift */; };
+		935F424A273E0D3C00C31ED7 /* test.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 935F4249273E0D3C00C31ED7 /* test.jpeg */; };
+		935F424C273E37F900C31ED7 /* explore.json in Resources */ = {isa = PBXBuildFile; fileRef = 935F424B273E37F900C31ED7 /* explore.json */; };
+		935F424E273E38D400C31ED7 /* ExploreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F424D273E38D400C31ED7 /* ExploreManager.swift */; };
 		93E3CB5C2734E5CD00A3A0F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93E3CB5B2734E5CD00A3A0F0 /* GoogleService-Info.plist */; };
 		93E3CB6027350B9A00A3A0F0 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E3CB5F27350B9A00A3A0F0 /* Extension.swift */; };
 		93E3CB622735165C00A3A0F0 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E3CB612735165C00A3A0F0 /* PostModel.swift */; };
@@ -60,6 +67,13 @@
 		935F423B273D011100C31ED7 /* ExploerPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploerPostViewModel.swift; sourceTree = "<group>"; };
 		935F423D273D016D00C31ED7 /* ExploreHashTagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashTagViewModel.swift; sourceTree = "<group>"; };
 		935F423F273D018900C31ED7 /* ExploreUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserViewModel.swift; sourceTree = "<group>"; };
+		935F4241273E00FB00C31ED7 /* ExploreBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		935F4243273E013700C31ED7 /* ExplorePostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePostCollectionViewCell.swift; sourceTree = "<group>"; };
+		935F4245273E016C00C31ED7 /* ExploreUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		935F4247273E017B00C31ED7 /* ExploreHashtagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagCollectionViewCell.swift; sourceTree = "<group>"; };
+		935F4249273E0D3C00C31ED7 /* test.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpeg; sourceTree = "<group>"; };
+		935F424B273E37F900C31ED7 /* explore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = explore.json; sourceTree = "<group>"; };
+		935F424D273E38D400C31ED7 /* ExploreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreManager.swift; sourceTree = "<group>"; };
 		93E3CB5B2734E5CD00A3A0F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		93E3CB5F27350B9A00A3A0F0 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		93E3CB612735165C00A3A0F0 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -134,7 +148,9 @@
 		93FFE8CB2734DF85000E2B8A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				935F4249273E0D3C00C31ED7 /* test.jpeg */,
 				93FFE8C02734D6F9000E2B8A /* Assets.xcassets */,
+				935F424B273E37F900C31ED7 /* explore.json */,
 				93FFE8B72734D6F8000E2B8A /* AppDelegate.swift */,
 				93FFE8B92734D6F8000E2B8A /* SceneDelegate.swift */,
 				93E3CB5F27350B9A00A3A0F0 /* Extension.swift */,
@@ -192,6 +208,7 @@
 				93FFE8ED2734E201000E2B8A /* DatabaseManager.swift */,
 				93FFE8EF2734E228000E2B8A /* AuthenticationManager.swift */,
 				93FFE8F12734E257000E2B8A /* HapticsManager.swift */,
+				935F424D273E38D400C31ED7 /* ExploreManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -233,6 +250,10 @@
 			isa = PBXGroup;
 			children = (
 				9348C6ED273A53B300F089AD /* CommentTableViewCell.swift */,
+				935F4241273E00FB00C31ED7 /* ExploreBannerCollectionViewCell.swift */,
+				935F4243273E013700C31ED7 /* ExplorePostCollectionViewCell.swift */,
+				935F4245273E016C00C31ED7 /* ExploreUserCollectionViewCell.swift */,
+				935F4247273E017B00C31ED7 /* ExploreHashtagCollectionViewCell.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -316,6 +337,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F424A273E0D3C00C31ED7 /* test.jpeg in Resources */,
+				935F424C273E37F900C31ED7 /* explore.json in Resources */,
 				9348C6F1273A78B000F089AD /* video.mp4 in Resources */,
 				93FFE8C42734D6F9000E2B8A /* LaunchScreen.storyboard in Resources */,
 				93E3CB5C2734E5CD00A3A0F0 /* GoogleService-Info.plist in Resources */,
@@ -394,16 +417,20 @@
 				93FFE8EE2734E201000E2B8A /* DatabaseManager.swift in Sources */,
 				9348C6EE273A53B300F089AD /* CommentTableViewCell.swift in Sources */,
 				93FFE8D42734E08C000E2B8A /* ExploreViewController.swift in Sources */,
+				935F4246273E016C00C31ED7 /* ExploreUserCollectionViewCell.swift in Sources */,
 				93FFE8E22734E125000E2B8A /* SettingViewController.swift in Sources */,
 				93FFE8DC2734E105000E2B8A /* UserListViewController.swift in Sources */,
 				935F4230273CFDE900C31ED7 /* ExploraSection.swift in Sources */,
 				93FFE8E82734E1B9000E2B8A /* PostViewController.swift in Sources */,
+				935F4242273E00FB00C31ED7 /* ExploreBannerCollectionViewCell.swift in Sources */,
 				93FFE8D62734E0B5000E2B8A /* CameraViewController.swift in Sources */,
+				935F424E273E38D400C31ED7 /* ExploreManager.swift in Sources */,
 				935F4232273CFE2800C31ED7 /* ExploreCell.swift in Sources */,
 				93FFE8E42734E15B000E2B8A /* TabBarViewController.swift in Sources */,
 				935F4236273D00B800C31ED7 /* ExploreBannerViewModel.swift in Sources */,
 				93FFE8BC2734D6F8000E2B8A /* HomeViewController.swift in Sources */,
 				9348C6EC273A4FB500F089AD /* User.swift in Sources */,
+				935F4248273E017B00C31ED7 /* ExploreHashtagCollectionViewCell.swift in Sources */,
 				935F4240273D018900C31ED7 /* ExploreUserViewModel.swift in Sources */,
 				935F423E273D016D00C31ED7 /* ExploreHashTagViewModel.swift in Sources */,
 				93E3CB6027350B9A00A3A0F0 /* Extension.swift in Sources */,
@@ -414,6 +441,7 @@
 				9348C6EA273A4F7400F089AD /* PostComment.swift in Sources */,
 				93FFE8DE2734E112000E2B8A /* SignInViewController.swift in Sources */,
 				93E3CB622735165C00A3A0F0 /* PostModel.swift in Sources */,
+				935F4244273E013700C31ED7 /* ExplorePostCollectionViewCell.swift in Sources */,
 				93FFE8DA2734E0ED000E2B8A /* ProfileViewController.swift in Sources */,
 				93FFE8EC2734E1E5000E2B8A /* StorageManager.swift in Sources */,
 				93FFE8B82734D6F8000E2B8A /* AppDelegate.swift in Sources */,
