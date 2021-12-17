@@ -1,7 +1,7 @@
 Tiktok APP in swift
 ===
 
-Tiktok APP 實作練習，目標掌握coding熟悉度，學會手刻ＵＩ介面，ＭＶＶＭ架構，以及與FireBase的應用。<br>
+Tiktok APP 實作練習，目標掌握coding熟悉度，手刻ＵＩ介面，ＭＶＶＭ架構，以及與FireBase的應用。<br>
  <br>
 參考網站：https://courses.iosacademy.io/p/building-tiktok-for-ios <br>
  <br>
