@@ -8,6 +8,9 @@ Tiktok APP 實作練習，目標掌握coding熟悉度，學會手刻ＵＩ介面
  
 ## 內容：
 
+### 使用架構：MVVM 
+### 使用語言：Swift 
+
 ### 實踐項目:
 * 影像Controller左右滑動/垂直滑動
 * collectionView頁面
@@ -18,8 +21,7 @@ Tiktok APP 實作練習，目標掌握coding熟悉度，學會手刻ＵＩ介面
 
 
  
-使用架構：MVVM </br>
-使用語言：Swift </br>
+
 ### 使用功能：
 * UIKit
 * FireBase-Authentication
