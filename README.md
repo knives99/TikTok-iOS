@@ -14,3 +14,4 @@ Tiktok APP 實作練習，目標掌握coding熟悉度，學會手刻ＵＩ介面
 * FireBase-Database</br>
 * FireBase-Storage</br>
 * AVfoundation</br>
+* CollectionView - Compositional Layout </br>
