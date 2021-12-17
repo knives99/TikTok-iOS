@@ -9,12 +9,12 @@ Tiktok APP 實作練習，目標掌握coding熟悉度，學會手刻ＵＩ介面
 ## 內容：
 
 ### 實踐項目:
-影像Controller左右滑動/垂直滑動
-collectionView頁面
-相機功能 
-照片預覽
-照片上傳
-通知介面
+* 影像Controller左右滑動/垂直滑動
+* collectionView頁面
+* 相機功能 
+* 照片預覽
+* 照片上傳
+* 通知介面
 
 
  
