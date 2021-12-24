@@ -6,6 +6,9 @@ Tiktok APP 實作練習，目標掌握coding熟悉度，手刻ＵＩ介面，Ｍ
 參考網站：https://courses.iosacademy.io/p/building-tiktok-for-ios <br>
  <br>
  
+  <img src="https://github.com/knives99/TikTok-iOS/blob/master/pic01.png" width="25%" height="25%"  />
+
+ 
 ## 內容：
 
 ### 使用架構：MVVM 
